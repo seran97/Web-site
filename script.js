@@ -1,83 +1,83 @@
 const services = [
   {
-    title: "Diagnóstico financiero anticipado",
+    title: "Diagnostico financiero anticipado",
     description:
-      "Tomamos información financiera dispersa y la convertimos en una lectura inicial clara para evaluar clientes, proyectos y riesgos con más velocidad.",
+      "Tomamos informacion financiera dispersa y la convertimos en una lectura inicial clara para evaluar clientes, proyectos y riesgos con mas velocidad.",
   },
   {
-    title: "Automatización de EEFF y homologación financiera",
+    title: "Automatizacion de EEFF y homologacion financiera",
     description:
-      "Reducimos trabajo manual en clasificación, depuración y auditoría de estados financieros, especialmente en entornos Microsoft 365.",
+      "Reducimos trabajo manual en clasificacion, depuracion y auditoria de estados financieros, especialmente en entornos Microsoft 365.",
   },
   {
     title: "Dashboard de cartera y seguimiento",
     description:
-      "Construimos tableros accionables para seguimiento de cartera, transición de mora y visibilidad operativa para equipos de crédito y riesgo.",
+      "Construimos tableros accionables para seguimiento de cartera, transicion de mora y visibilidad operativa para equipos de credito y riesgo.",
   },
   {
-    title: "Simulador de liquidez para comité",
+    title: "Simulador de liquidez para comite",
     description:
-      "Diseñamos herramientas simples y claras para evaluar escenarios de liquidez, sensibilidad y brechas de caja en espacios de decisión.",
+      "Disenamos herramientas simples y claras para evaluar escenarios de liquidez, sensibilidad y brechas de caja en espacios de decision.",
   },
   {
     title: "Inteligencia macro y sectorial aplicada",
     description:
-      "Integramos señales macroeconómicas y sectoriales para apoyar originación, seguimiento y discusiones de comité con mejor contexto.",
+      "Integramos senales macroeconomicas y sectoriales para apoyar originacion, seguimiento y discusiones de comite con mejor contexto.",
   },
 ];
 
 const sectors = [
   "Empresas medianas",
-  "Fintech de crédito",
+  "Fintech de credito",
   "Factoring y confirming",
   "Cooperativas y originadores",
-  "Áreas financieras y de riesgo",
-  "Equipos con operación en Microsoft 365",
+  "Areas financieras y de riesgo",
+  "Equipos con operacion en Microsoft 365",
 ];
 
 const steps = [
   {
     step: "1",
     title: "Descubrimiento",
-    text: "Entendemos el proceso actual, las fuentes de información y los puntos de fricción que hoy ralentizan el análisis o el seguimiento.",
+    text: "Entendemos el proceso actual, las fuentes de informacion y los puntos de friccion que hoy ralentizan el analisis o el seguimiento.",
   },
   {
     step: "2",
-    title: "Diagnóstico",
-    text: "Identificamos brechas de calidad, oportunidades de automatización y la estructura mínima necesaria para entregar una herramienta útil.",
+    title: "Diagnostico",
+    text: "Identificamos brechas de calidad, oportunidades de automatizacion y la estructura minima necesaria para entregar una herramienta util.",
   },
   {
     step: "3",
-    title: "Diseño e implementación",
-    text: "Construimos el flujo, dashboard o automatización con foco en uso real, claridad operativa y resultados visibles.",
+    title: "Diseno e implementacion",
+    text: "Construimos el flujo, dashboard o automatizacion con foco en uso real, claridad operativa y resultados visibles.",
   },
   {
     step: "4",
     title: "Puesta en marcha",
-    text: "Acompañamos la adopción, validamos entregables y dejamos una base sólida para seguimiento o evolución futura.",
+    text: "Acompanamos la adopcion, validamos entregables y dejamos una base solida para seguimiento o evolucion futura.",
   },
 ];
 
 const outcomes = [
-  "Menos trabajo manual en revisión financiera",
-  "Información homogénea y más confiable",
-  "Diagnóstico inicial más rápido",
-  "Mayor visibilidad para comité",
-  "Mejor base para originación, riesgo y seguimiento",
+  "Menos trabajo manual en revision financiera",
+  "Informacion homogenea y mas confiable",
+  "Diagnostico inicial mas rapido",
+  "Mayor visibilidad para comite",
+  "Mejor base para originacion, riesgo y seguimiento",
 ];
 
 const benefits = [
   {
-    title: "Más velocidad",
-    text: "Reducimos tiempos de revisión y preparación de información para análisis, riesgo y comités.",
+    title: "Mas velocidad",
+    text: "Reducimos tiempos de revision y preparacion de informacion para analisis, riesgo y comites.",
   },
   {
-    title: "Más claridad",
-    text: "Ordenamos datos financieros y operativos para que la discusión se base en información útil, no en archivos dispersos.",
+    title: "Mas claridad",
+    text: "Ordenamos datos financieros y operativos para que la discusion se base en informacion util, no en archivos dispersos.",
   },
   {
-    title: "Más tracción",
-    text: "Convertimos análisis y automatización en entregables accionables para originación, seguimiento y control.",
+    title: "Mas traccion",
+    text: "Convertimos analisis y automatizacion en entregables accionables para originacion, seguimiento y control.",
   },
 ];
 
@@ -117,9 +117,7 @@ function renderSteps(items, targetId) {
 
 function renderStack(items, targetId) {
   const target = document.getElementById(targetId);
-  target.innerHTML = items
-    .map((item) => `<div class="stack-item">${item}</div>`)
-    .join("");
+  target.innerHTML = items.map((item) => `<div class="stack-item">${item}</div>`).join("");
 }
 
 renderCards(benefits, "benefits-grid");
