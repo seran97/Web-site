@@ -1,66 +1,66 @@
 const sectors = [
-  "Empresas medianas",
+  "Cooperativas financieras reguladas",
+  "Aseguradoras y reaseguradoras",
   "Fintech de crédito",
-  "Factoring y confirming",
-  "Cooperativas y originadores",
-  "Áreas financieras y de riesgo",
-  "Equipos con operación en Microsoft 365",
+  "Fondos de segundo piso",
+  "Outsourcing financiero y de cartera",
+  "Áreas de riesgo y tesorería supervisadas",
 ];
 
 const problems = [
   {
-    title: "Revisión manual excesiva",
-    text: "El análisis depende de archivos dispersos, cruces manuales y tiempo operativo que se va en tareas repetitivas.",
+    title: "Riesgo evaluado sin modelo",
+    text: "El riesgo de tasa, liquidez o cartera se gestiona con criterio operativo, pero sin un modelo cuantitativo que respalde la decisión con supuestos explícitos.",
   },
   {
-    title: "Información heterogénea",
-    text: "Los estados financieros y soportes llegan con estructuras distintas, poca homologación y baja trazabilidad.",
+    title: "Información dispersa y sin homologar",
+    text: "Los estados financieros llegan con estructuras distintas, poca homologación y baja trazabilidad, lo que ralentiza cualquier análisis.",
   },
   {
-    title: "Visibilidad insuficiente",
-    text: "Seguimiento, cartera o comité operan con visibilidad parcial y sin una lectura clara de prioridades.",
+    title: "ALM y siniestros sin metodología formal",
+    text: "El equipo detecta problemas tarde porque no existe un marco de medición claro para riesgo estructural, brechas de liquidez o siniestralidad.",
   },
   {
-    title: "Lentitud para decidir",
-    text: "Evaluar un cliente, revisar riesgo o preparar una discusión de comité toma más tiempo del necesario.",
+    title: "Comités sin soporte cuantitativo",
+    text: "Las decisiones se presentan sin escenarios, sin sensibilidades y sin respaldo de modelo, lo que debilita el criterio y la trazabilidad.",
   },
 ];
 
 const services = [
   {
-    title: "Diagnóstico financiero anticipado",
+    title: "Diagnóstico ALM / IRRBB",
     description:
-      "Convertimos información financiera dispersa en una lectura inicial clara para apoyar evaluación, originación y priorización de riesgo.",
+      "Evaluamos el riesgo de tasa, brecha de reprecio y posición de liquidez estructural bajo los marcos regulatorios vigentes (ALM / IRRBB / RTILB), con modelos calibrados a la estructura del balance.",
     value:
-      "Entrega una base más rápida para revisar casos, identificar alertas iniciales y estructurar mejor la conversación financiera.",
+      "Entrega una lectura cuantitativa del riesgo estructural utilizable en comité, auditoría interna o proceso de supervisión regulatoria.",
   },
   {
     title: "Automatización de EEFF y homologación financiera",
     description:
-      "Reducimos trabajo manual en clasificación, depuración y homologación de estados financieros, especialmente en flujos apoyados en Microsoft 365.",
+      "Reducimos trabajo manual en clasificación, depuración y homologación de estados financieros en flujos apoyados en Microsoft 365, con trazabilidad y lógica auditable.",
     value:
-      "Mejora consistencia, trazabilidad y calidad de la información que se usa para análisis y seguimiento.",
+      "Mejora la consistencia y calidad de la información base para scoring, análisis de riesgo y seguimiento de cartera.",
   },
   {
-    title: "Dashboard de cartera y seguimiento",
+    title: "Scoring crediticio y modelo de riesgo",
     description:
-      "Construimos tableros accionables para seguimiento de cartera, transición de mora y visibilidad operativa para equipos de crédito y riesgo.",
+      "Construimos modelos de scoring o calificación crediticia con metodología cuantitativa, calibrados para la base de datos y el contexto de cartera del cliente.",
     value:
-      "Permite monitorear evolución, detectar desvíos y sostener una conversación más clara con operación y comité.",
+      "Reemplaza criterio subjetivo con un modelo replicable, auditable y ajustable con datos reales de la operación.",
   },
   {
-    title: "Simulador de liquidez para comité",
+    title: "Simulación de liquidez y stress testing",
     description:
-      "Diseñamos herramientas simples para evaluar escenarios de liquidez, sensibilidad y brechas de caja en espacios de decisión.",
+      "Diseñamos modelos de simulación de liquidez con escenarios de estrés, sensibilidad de tasas y análisis de brechas de caja para espacios de decisión y comité.",
     value:
-      "Ayuda a estructurar discusiones con supuestos explícitos y mejor soporte para decisiones financieras.",
+      "Permite tomar decisiones de tesorería y liquidez con supuestos explícitos, escenarios cuantificados y respaldo técnico claro.",
   },
   {
-    title: "Inteligencia macro y sectorial aplicada",
+    title: "Diagnóstico actuarial de siniestros",
     description:
-      "Integramos señales macroeconómicas y sectoriales en el análisis para enriquecer evaluación, seguimiento y conversaciones de comité.",
+      "Aplicamos metodología actuarial para evaluar reservas, siniestralidad, frecuencia e impacto esperado en carteras de seguros o portafolios con componente de riesgo actuarial.",
     value:
-      "Aporta contexto útil para interpretar riesgo, priorizar seguimiento y fortalecer criterio de evaluación.",
+      "Entrega un diagnóstico técnico que sirve como base para reservas, renegociación con reaseguradoras o reporte regulatorio.",
   },
 ];
 
@@ -93,18 +93,18 @@ const steps = [
 ];
 
 const outcomes = [
-  "Menos trabajo manual en revisión financiera.",
-  "Mejor calidad y homogeneidad de la información.",
-  "Más velocidad para analizar, evaluar y preparar comité.",
-  "Mayor visibilidad para seguimiento y toma de decisión.",
-  "Mejor base para originación, riesgo y seguimiento posterior.",
+  "Riesgo cuantificado, no solo intuido.",
+  "Decisiones de comité con respaldo de modelo y supuestos explícitos.",
+  "Menos trabajo manual, más trazabilidad y consistencia.",
+  "Modelos calibrados para tu cartera y contexto regulatorio.",
+  "Diagnósticos técnicos utilizables en auditoría y supervisión.",
 ];
 
 const notUs = [
-  "No somos una fábrica de software genérico.",
-  "No vendemos humo de IA ni discursos sobredimensionados.",
-  "No reemplazamos el juicio financiero del cliente.",
-  "No prometemos plataformas gigantes cuando el problema requiere claridad y foco.",
+  "No somos una fábrica de software genérico ni una consultora de presentaciones.",
+  "No reemplazamos el juicio financiero: lo respaldamos con modelo y datos.",
+  "No vendemos IA mágica: usamos modelos financieros probados que se entienden y se auditan.",
+  "No prometemos plataformas sobredimensionadas cuando el problema requiere claridad y foco.",
 ];
 
 function renderChips(items, targetId) {
