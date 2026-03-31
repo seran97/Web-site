@@ -105,10 +105,25 @@ a {
   box-shadow: 0 0 22px rgba(143, 212, 193, 0.45);
 }
 
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
 .topbar-link,
 .footer-links a {
   color: var(--muted);
   font-size: 0.95rem;
+}
+
+.topbar-link-dim {
+  font-size: 0.84rem;
+  opacity: 0.6;
+}
+
+.topbar-link-dim:hover {
+  opacity: 1;
 }
 
 .hero-grid,
