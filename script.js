@@ -1,103 +1,147 @@
-const services = [
+const sectors = [
+  "Empresas medianas",
+  "Fintech de crédito",
+  "Factoring y confirming",
+  "Cooperativas y originadores",
+  "Áreas financieras y de riesgo",
+  "Equipos con operación en Microsoft 365",
+];
+
+const problems = [
   {
-    title: "Diagnostico financiero anticipado",
-    description:
-      "Tomamos informacion financiera dispersa y la convertimos en una lectura inicial clara para evaluar clientes, proyectos y riesgos con mas velocidad.",
+    title: "Revisión manual excesiva",
+    text: "El análisis depende de archivos dispersos, cruces manuales y tiempo operativo que se va en tareas repetitivas.",
   },
   {
-    title: "Automatizacion de EEFF y homologacion financiera",
+    title: "Información heterogénea",
+    text: "Los estados financieros y soportes llegan con estructuras distintas, poca homologación y baja trazabilidad.",
+  },
+  {
+    title: "Visibilidad insuficiente",
+    text: "Seguimiento, cartera o comité operan con visibilidad parcial y sin una lectura clara de prioridades.",
+  },
+  {
+    title: "Lentitud para decidir",
+    text: "Evaluar un cliente, revisar riesgo o preparar una discusión de comité toma más tiempo del necesario.",
+  },
+];
+
+const services = [
+  {
+    title: "Diagnóstico financiero anticipado",
     description:
-      "Reducimos trabajo manual en clasificacion, depuracion y auditoria de estados financieros, especialmente en entornos Microsoft 365.",
+      "Convertimos información financiera dispersa en una lectura inicial clara para apoyar evaluación, originación y priorización de riesgo.",
+    value:
+      "Entrega una base más rápida para revisar casos, identificar alertas iniciales y estructurar mejor la conversación financiera.",
+  },
+  {
+    title: "Automatización de EEFF y homologación financiera",
+    description:
+      "Reducimos trabajo manual en clasificación, depuración y homologación de estados financieros, especialmente en flujos apoyados en Microsoft 365.",
+    value:
+      "Mejora consistencia, trazabilidad y calidad de la información que se usa para análisis y seguimiento.",
   },
   {
     title: "Dashboard de cartera y seguimiento",
     description:
-      "Construimos tableros accionables para seguimiento de cartera, transicion de mora y visibilidad operativa para equipos de credito y riesgo.",
+      "Construimos tableros accionables para seguimiento de cartera, transición de mora y visibilidad operativa para equipos de crédito y riesgo.",
+    value:
+      "Permite monitorear evolución, detectar desvíos y sostener una conversación más clara con operación y comité.",
   },
   {
-    title: "Simulador de liquidez para comite",
+    title: "Simulador de liquidez para comité",
     description:
-      "Disenamos herramientas simples y claras para evaluar escenarios de liquidez, sensibilidad y brechas de caja en espacios de decision.",
+      "Diseñamos herramientas simples para evaluar escenarios de liquidez, sensibilidad y brechas de caja en espacios de decisión.",
+    value:
+      "Ayuda a estructurar discusiones con supuestos explícitos y mejor soporte para decisiones financieras.",
   },
   {
     title: "Inteligencia macro y sectorial aplicada",
     description:
-      "Integramos senales macroeconomicas y sectoriales para apoyar originacion, seguimiento y discusiones de comite con mejor contexto.",
+      "Integramos señales macroeconómicas y sectoriales en el análisis para enriquecer evaluación, seguimiento y conversaciones de comité.",
+    value:
+      "Aporta contexto útil para interpretar riesgo, priorizar seguimiento y fortalecer criterio de evaluación.",
   },
-];
-
-const sectors = [
-  "Empresas medianas",
-  "Fintech de credito",
-  "Factoring y confirming",
-  "Cooperativas y originadores",
-  "Areas financieras y de riesgo",
-  "Equipos con operacion en Microsoft 365",
 ];
 
 const steps = [
   {
     step: "1",
     title: "Descubrimiento",
-    text: "Entendemos el proceso actual, las fuentes de informacion y los puntos de friccion que hoy ralentizan el analisis o el seguimiento.",
+    text: "Entendemos el proceso actual, las fuentes de información y los puntos de fricción que hoy ralentizan el análisis o el seguimiento.",
   },
   {
     step: "2",
-    title: "Diagnostico",
-    text: "Identificamos brechas de calidad, oportunidades de automatizacion y la estructura minima necesaria para entregar una herramienta util.",
+    title: "Diagnóstico",
+    text: "Identificamos brechas de calidad, oportunidades de automatización y el alcance mínimo necesario para entregar una herramienta útil.",
   },
   {
     step: "3",
-    title: "Diseno e implementacion",
-    text: "Construimos el flujo, dashboard o automatizacion con foco en uso real, claridad operativa y resultados visibles.",
+    title: "Diseño e implementación",
+    text: "Construimos el flujo, tablero o automatización con foco en uso real, claridad operativa y trazabilidad.",
   },
   {
     step: "4",
     title: "Puesta en marcha",
-    text: "Acompanamos la adopcion, validamos entregables y dejamos una base solida para seguimiento o evolucion futura.",
+    text: "Acompañamos validación, ajustes y adopción inicial para dejar una base sólida en operación.",
+  },
+  {
+    step: "5",
+    title: "Seguimiento opcional",
+    text: "Si hace sentido, continuamos con mejora incremental, soporte de seguimiento o nuevas capas de análisis.",
   },
 ];
 
 const outcomes = [
-  "Menos trabajo manual en revision financiera",
-  "Informacion homogenea y mas confiable",
-  "Diagnostico inicial mas rapido",
-  "Mayor visibilidad para comite",
-  "Mejor base para originacion, riesgo y seguimiento",
+  "Menos trabajo manual en revisión financiera.",
+  "Mejor calidad y homogeneidad de la información.",
+  "Más velocidad para analizar, evaluar y preparar comité.",
+  "Mayor visibilidad para seguimiento y toma de decisión.",
+  "Mejor base para originación, riesgo y seguimiento posterior.",
 ];
 
-const benefits = [
-  {
-    title: "Mas velocidad",
-    text: "Reducimos tiempos de revision y preparacion de informacion para analisis, riesgo y comites.",
-  },
-  {
-    title: "Mas claridad",
-    text: "Ordenamos datos financieros y operativos para que la discusion se base en informacion util, no en archivos dispersos.",
-  },
-  {
-    title: "Mas traccion",
-    text: "Convertimos analisis y automatizacion en entregables accionables para originacion, seguimiento y control.",
-  },
+const notUs = [
+  "No somos una fábrica de software genérico.",
+  "No vendemos humo de IA ni discursos sobredimensionados.",
+  "No reemplazamos el juicio financiero del cliente.",
+  "No prometemos plataformas gigantes cuando el problema requiere claridad y foco.",
 ];
 
-function renderCards(items, targetId) {
+function renderChips(items, targetId) {
+  const target = document.getElementById(targetId);
+  target.innerHTML = items.map((item) => `<span class="chip">${item}</span>`).join("");
+}
+
+function renderProblemCards(items, targetId) {
   const target = document.getElementById(targetId);
   target.innerHTML = items
     .map(
       (item) => `
         <article class="card">
           <h3>${item.title}</h3>
-          <p>${item.description || item.text}</p>
+          <p>${item.text}</p>
         </article>
       `
     )
     .join("");
 }
 
-function renderChips(items, targetId) {
+function renderServiceCards(items, targetId) {
   const target = document.getElementById(targetId);
-  target.innerHTML = items.map((item) => `<span class="chip">${item}</span>`).join("");
+  target.innerHTML = items
+    .map(
+      (item) => `
+        <article class="service-card">
+          <h3>${item.title}</h3>
+          <p class="service-description">${item.description}</p>
+          <p class="service-value">
+            <span class="service-label">Valor que entrega</span><br />
+            ${item.value}
+          </p>
+        </article>
+      `
+    )
+    .join("");
 }
 
 function renderSteps(items, targetId) {
@@ -120,8 +164,14 @@ function renderStack(items, targetId) {
   target.innerHTML = items.map((item) => `<div class="stack-item">${item}</div>`).join("");
 }
 
-renderCards(benefits, "benefits-grid");
-renderCards(services, "services-grid");
+function renderList(items, targetId) {
+  const target = document.getElementById(targetId);
+  target.innerHTML = items.map((item) => `<li>${item}</li>`).join("");
+}
+
 renderChips(sectors, "sectors-list");
-renderStack(outcomes, "outcomes-list");
+renderProblemCards(problems, "problems-grid");
+renderServiceCards(services, "services-grid");
 renderSteps(steps, "steps-grid");
+renderStack(outcomes, "outcomes-list");
+renderList(notUs, "not-us-list");
